@@ -7,13 +7,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --cache",
-    "format": "pnpm lint -- --fix && prettier -w **/*.{md,json,js}",
+    "lint": "next lint",
+    "format": "next lint --fix && prettier -w \"**/*.+(js|ts|json|md|tsx)\"",
     "test": "concurrently 'jest --cache' 'tsc --noEmit'"
   },
   "dependencies": {
     "next": "13.0.2",
-    "next-mdx-remote": "^4.1.0",
+    "next-mdx-remote": "^4.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -30,7 +30,7 @@
     "@typescript-eslint/parser": "^5.42.0",
     "autoprefixer": "^10.4.13",
     "concurrently": "^7.5.0",
-    "eslint": "8.22.0",
+    "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.2",
