@@ -2,8 +2,15 @@
 
 exports[`Home matches snapshot 1`] = `
 <div>
-  <p>
-    Hi there, I'm Riccardo.
-  </p>
+  <div>
+    <p>
+      Some 
+      <strong>
+        mdx
+      </strong>
+       text, with a component 
+      I'm a React component!
+    </p>
+  </div>
 </div>
 `;

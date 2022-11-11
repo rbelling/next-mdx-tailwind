@@ -23,9 +23,11 @@ const customJestConfig = {
 };
 
 async function jestConfig() {
+  // region modules from node_modules that Jest needs to transpile
   const esModules = [
     '@mdx-js',
     '@mdx-js.mdx',
+    '@mdx-js.react',
     'bail',
     'ccount',
     'character-entities',
@@ -71,6 +73,7 @@ async function jestConfig() {
     'vfile.+',
     'zwitch',
   ].join('|');
+  // endregion
   const nextJestConfig = await createJestConfig(customJestConfig)();
 
   /**
