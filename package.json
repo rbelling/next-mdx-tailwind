@@ -11,6 +11,10 @@
     "format": "next lint --fix && prettier -w \"**/*.+(js|ts|json|md|tsx)\"",
     "test": "concurrently 'jest --cache' 'tsc --noEmit'"
   },
+  "browserslist": [
+    "supports es6-module",
+    "maintained node versions"
+  ],
   "dependencies": {
     "next": "13.0.3",
     "next-mdx-remote": "^4.2.0",
