@@ -5,7 +5,7 @@ export default function Head() {
       <title>Next.js + Markdown</title>
       <meta
         name="description"
-        content="A Next.js based boilerplate that allows you to use markdown files."
+        content="A Next.js boilerplate that allows you to use markdown files."
       />
     </>
   );

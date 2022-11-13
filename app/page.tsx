@@ -1,16 +1,11 @@
-import { serialize } from 'next-mdx-remote/serialize';
-import Intro from '@/components/Intro';
+import Home from '@/components/Home';
+import { getMarkdown } from '@/utils/mdxUtils';
 
-export default async function Home() {
-  const source = 'Some **mdx** text, with a component <Intro />';
-  const markdownContent = await serialize(source);
+export default async function Index() {
+  const markdown = await getMarkdown<
+    Record<string, unknown>,
+    { title: string; description: string }
+  >('example.mdx');
 
-  return (
-    <main>
-      <h1 className="text-green-500" data-testid="heading">
-        Hi There!
-      </h1>
-      <Intro {...markdownContent} />
-    </main>
-  );
+  return <Home {...markdown} />;
 }

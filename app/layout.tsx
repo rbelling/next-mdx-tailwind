@@ -5,7 +5,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="[color-scheme:dark]">
       <head />
-      <body>{children}</body>
+      <body className="flex justify-center">{children}</body>
     </html>
   );
 }
