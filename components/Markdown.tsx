@@ -3,9 +3,10 @@ import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote';
 
 const Markdown = (props: MDXRemoteProps) => {
   return (
-    <div className="wrapper">
+    /* The `.prose` class is used by Tailwind Typography to add beautiful typographic defaults */
+    <article className="wrapper prose">
       <MDXRemote {...props} />
-    </div>
+    </article>
   );
 };
 
