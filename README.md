@@ -1,4 +1,25 @@
-**Modern Next.js boilerplate that supports Markdown content.**
+
+![Badge](https://img.shields.io/badge/Next-000000?logo=next.js&style=for-the-badge)
+![Badge](https://img.shields.io/badge/TypeScript-black?logo=typescript&style=for-the-badge)
+![Badge](https://img.shields.io/badge/Node.js-green?logo=node.js&style=for-the-badge)
+
+![Badge](https://img.shields.io/badge/React-teal?logo=react&style=for-the-badge)
+![Badge](https://img.shields.io/badge/Markdown-light?logo=markdown&style=for-the-badge)
+![Badge](https://img.shields.io/badge/tailwindcss-lightblue.svg?logo=tailwind-css&style=for-the-badge)
+
+![Badge](https://img.shields.io/badge/-jest-%23C21325?logo=jest&style=for-the-badge)
+![Badge](https://img.shields.io/badge/eslint-3A33D1?logo=eslint&style=for-the-badge)
+![Badge](https://img.shields.io/badge/prettier-1A2C34?logo=prettier&style=for-the-badge)
+![Badge](https://img.shields.io/badge/netlify-%23000000.svg?logo=netlify&style=for-the-badge)
+
+
+
+
+# next-mdx-tailwind
+
+Next.js boilerplate to easily work with Markdown content styled with Tailwind.
+
+---
 
 ## Features
 - Next.js 13 using the [`app` folder beta](https://nextjs.org/blog/next-13#new-app-directory-beta)
@@ -11,6 +32,9 @@
   - Markdown files allow embedding React components in the flow of the document.
   - Supports embedding meta data [in the Front Matter section of a post](https://github.com/vfile/vfile-matter#use)
 - Uses [`pnpm`](https://pnpm.io/) as package manager
+- [Jest](https://jestjs.io) testing pre-configured
+- [Prettier](https://prettier.io)
+- [Eslint](http://eslint.org)
 
 ## Getting Started
 Make sure you have [`pnpm`](https://pnpm.io/) installed globally.

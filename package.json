@@ -1,8 +1,8 @@
 {
-  "name": "next-ts-markdown",
+  "name": "next-mdx-tailwind",
   "version": "0.1.0",
   "author": "Riccardo Bellingeri",
-  "description": "A modern Next.js boilerplate that allows you to use markdown files.",
+  "description": "Next.js boilerplate to easily work with Markdown content styled with Tailwind.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +11,7 @@
     "format": "next lint --fix && prettier -w \"**/*.+(js|ts|json|md|tsx)\"",
     "test": "concurrently 'jest --cache' 'tsc --noEmit'"
   },
+  "keywords": ["Next.js", "React", "Markdown", "Tailwind", "TypeScript"],
   "browserslist": [
     "supports es6-module",
     "maintained node versions"
