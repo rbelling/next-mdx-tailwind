@@ -1,5 +1,6 @@
 'use client';
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote';
+import 'highlight.js/styles/shades-of-purple.css'
 
 const Markdown = (props: MDXRemoteProps) => {
   return (

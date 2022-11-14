@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemoteSerializeResult } from 'next-mdx-remote';
+import rehypeHighlight from 'rehype-highlight';
+import remarkGfm from 'remark-gfm'
 
 // POSTS_PATH is useful when you want to get the path to a specific file
 const POSTS_PATH = path.join(process.cwd(), 'posts');
@@ -24,6 +26,10 @@ export async function getMarkdown<
   const result = await serialize(source, {
     scope: variables,
     parseFrontmatter: true,
+    mdxOptions: {
+      remarkPlugins: [remarkGfm],
+      rehypePlugins: [rehypeHighlight],
+    },
   });
   return result as MDXRemoteSerializeResult<Variables, FrontMatterData>;
 }

@@ -17,10 +17,13 @@
   ],
   "dependencies": {
     "@tailwindcss/typography": "^0.5.8",
+    "highlight.js": "^11.6.0",
     "next": "13.0.3",
     "next-mdx-remote": "^4.2.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "rehype-highlight": "^6.0.0",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.16.5",

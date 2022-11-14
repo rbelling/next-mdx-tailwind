@@ -3,7 +3,7 @@ title: Example Post
 description: This is an example of a post. The description comes from the frontmatter section.
 ---
 
-<ArticleIntro date={date} title={title} description={description}/>
+<ArticleIntro date={date} title={title} description={description} />
 
 > This article's content is written in **markdown**
 
@@ -12,13 +12,26 @@ description: This is an example of a post. The description comes from the frontm
 Lorem markdownum cruor simul. *Potitus quae* sanguine et Sicaniam cadet est
 dedere portabat, vestes? Exsequitur ferat in [crinis](http://omnes.org/) dei
 nunc coniurata **quoslibet sopita** inminet diruit. Fronti me opus sub dataque
-ignes Agamemnonis ultima manant et **et vitalesque** fugit. Compescuit parabat
-genuisse Veneri solacia flumina conprecor falli bacchae ipse coniunx omina
-Maeoniaeque impetus rura.
+ignes Agamemnonis ultima manant et **et vitalesque** fugit.
 
 ```typescript
-const a = 3;
-const b = 2;
+const a: string = "bla";
+const b = { count: 3 };
+
+type CustomType = boolean
+
+const c = new ExtraExtra(b.count).checkNumber()
+
+class ExtraExtra {
+    private n: number;
+    constructor(n: number) {
+        this.n = n;
+    }
+    checkNumber(): "a" | "b" {
+        if (this.n > 0) { return "a" }
+        return "b";
+    }
+}
 ```
 
 ## Viderat tandem est prior faciente
@@ -34,8 +47,7 @@ feroxque, vultus. Nini domus denique pressa cuius hoc este et quamquam error
 Adeste [pararis](http://imum-age.org/) furto census adamanta *ad* feruntur
 facies cinctaque ignibus deprensa et illa narrare. Vis hic gens; Aenean
 tetigisse suo [sonat Saturnus et](http://manus.net/coeamus) quinos optavit,
-maxima comites Clyton in vacuae. Flammamque demum Maeoniaeque paene tellus,
-Ausoniis labuntur illis Liriope, tamen, illic meminisse. Quales inulti plena!
+maxima comites Clyton in vacuae.
 
 ## Huius unam cum salutant velut et est
 
@@ -81,27 +93,43 @@ Lorem markdownum Argis. Parte hanc scire, et illuc quam montana, inprovisoque.
 Vehi quo solo: _tot lustro_, illum, minatur, id quater, eodem ab Scythiam ab
 siquos, ternisque.
 
-- Conviva frontem
-- Parcite iaculum
-- Ut erat memorante
-- Ora heros diu nunc semina squamis lunae
-- Frigoris struxisse adacto
-- Cecropia traxit
+1. Conviva frontem
+1. Parcite iaculum
+1. Ut erat memorante
+
+| Tables   |      Are      |  Cool |
+|----------|---------------|-------|
+| col 1 is |  something so | $1600 |
+| col 2 is |    heyheyhe   |   $12 |
+| col 3 is | nonononononon |    $1 |
 
 Missus paras
 ------------
 
-In laetoque dilata. Ubi dumque enervet arsisses; et turba inposuit silentia
+In laetoque dilata. ~~Ubi dumque enervet arsisses; et turba inposuit silentia~~
 __inmeritae__ facinus maternaque agnoscis capillis vixque nec pariterque timor,
 _prima_. Dira socio cum meritum imperat __non__. In ciboque ille veniunt fumante
-_percutiens_ pars. Et neque cacumine non longius campo sed nam manu ter
-__latebra__.
+_percutiens_ pars.
 
-Adit aurea patriam, te una fluctibus qua signo teneraque potui fragosis caput et
-animalia. Hoc ingemit Idaeis Nestora tyranni pavidus Confremuere primum me
-meritum voverat lateri, aevum respiramen ut agros ante haud Achilles. Oenea
-vocabat est parte hanc iaculum vatum; ab puer diva in erat, dumque ruris. Canam
-novissimus sanguine iura murraeque meri famem?
+<sub>Et neque cacumine non longius campo sed nam manu ter
+__latebra__.</sub>
+
+<details>
+  <summary>Click me</summary>
+
+  ### Heading
+  1. Foo
+  2. Bar
+     * Baz
+     * Qux
+
+  ### Some Code
+  ```js
+  function logSomething(something) {
+    console.log('Something', something);
+  }
+  ```
+</details>
 
 Amorem umbrae vehebat edentem famulas
 -------------------------------------
@@ -111,6 +139,10 @@ Ulmus premens vagantem quasque, cum multa tempore ostendere nisi caelestibus
 nihil. [Corripuit](http://laturus-flavae.net/telum) actum credideris causa saxum
 defendere protinus, matri ne. Aura sic pars levatus quotiens; tuum reperta, loco
 ante ornabant et crudele ex _repulsus vires_?
+
+- [X] Item1
+- [ ] Item2
+- [ ] Item3
 
 Olim _rura ille_ defecto muros Styx naris amplexibus gerit: [Pace admissum
 protulit](http://spretae.net/lapsi.aspx) parva que vomentem, quos videt, dies.
